@@ -1,0 +1,442 @@
+@font-face {
+    font-family: 'HelveticaThin';
+    src: url(/fonts/HelveticaThin.ttf) format('truetype');
+    font-style: normal;
+    font-weight: normal;
+}
+
+p, h1, h2, h3, a {
+    font-family: 'Helvetica', 'sans-serif';
+}
+
+.main__block h1 {
+    font-family: 'HelveticaThin';
+    font-weight: 100;
+    letter-spacing: 5px;
+    height: 120px;
+}
+
+.main__block-text p {
+    font-size: 18px;
+    width: 330px;
+    margin-bottom: 50px;
+    padding-left: 0;
+}
+
+.main__block-text a {
+    box-sizing: border-box;
+    padding: 20px 40px 20px 40px;
+    border: 2px solid white;
+    border-radius: 30px;
+    text-decoration: none;
+    color: white;
+}
+
+.main__block-text a:hover {
+    opacity: 0.75;
+}
+
+.header__nav {
+    width: 550px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+    margin-left: 60px;
+    z-index: 2;
+}
+
+.header__nav a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+}
+
+.header__nav a:not(:first-of-type):hover {
+    opacity: 0.75;
+}
+
+.header__logo {
+    margin-right: 30px;
+}
+
+.header__telefone {
+    text-align: right;
+    margin-top: -40px;
+    margin-right: 50px;
+}
+
+.main__block {
+    height: 720px;
+}
+
+.main__block__image-girl {
+    width: 950px;
+    height: 740px;
+    background-image: 
+        url(../images/athletic-body.png);
+    margin-left: 450px;
+    margin-top: -45px;
+    z-index: 1;
+}
+
+.main__block__image-bigcircle {
+    width: 1000px; 
+    height: 1000px;
+        margin-top: -1000px;
+        margin-left: -300px;
+    background: #88A055;
+    overflow: hidden;
+    z-index: -1;
+    border-radius: 0 500px 500px 440px;
+}
+
+.main__block__image-middlecircle {
+    position: absolute;
+        top: 150px;
+        right: 150px;
+    width: 500px;
+    height: 500px;
+    background: #B6C491;
+    overflow: hidden;
+    z-index: -1;
+    border-radius: 300px;
+}
+
+.main__block__image-minicircle {
+    position: absolute;
+        top: 15%;
+        right: 7%;
+    width: 50px;
+    height: 50px;
+    background: #B6C491;
+    overflow: hidden;
+    z-index: -1;
+    border-radius: 100px;   
+}
+
+.main__block__image-emptycirlce {
+    position: absolute;
+    top: 3%;
+    right: 2%;
+    width: 30px;
+    height: 30px;
+    background: white;
+    border: 4px solid #B6C491;
+    overflow: hidden;
+    z-index: -1;
+    border-radius: 100px; 
+}
+
+.main__block-text {
+    padding-left: 350px;
+    padding-top: 45%;
+    text-align: center;
+    z-index: 3;
+    color: white;
+    width: 250px;
+}
+
+.main__block-text h1 {
+    font-size: 60px;
+    text-transform: uppercase;
+}
+
+.main__block-about {
+    position: relative;
+    padding-top: 140px;
+    height: 700px;
+}
+
+.main__block_about-img {
+    background-image: 
+    url(../images/pilates-studio-photo.png);
+    background-repeat: no-repeat;
+    position: absolute;
+        right: 85px;
+    margin-top: 35px;
+    width: 855px;
+    height: 630px;
+}
+
+.main__block_about-circles {
+    background-image: 
+     url(../images/mini-circles-round.png);
+    background-repeat: no-repeat;
+    width: 150px;
+    height: 100px;
+    position: absolute;
+        left: 630px;
+        top: 425px;
+    z-index: -1;
+}
+
+.main__block_about-text {
+    width: 330px;
+    padding-left: 50px;
+    font-family: 'HelveticaThin';
+    color: #484848;
+    line-height: 23px;
+}
+
+.main__block_about-text p {
+    padding-left: 0;
+}
+
+.main__block_about-text h2 {
+    font-size: 40px;
+    font-family: 'Helvetica';
+    font-weight: 400;
+    color: black;
+    margin-bottom: 60px;
+    padding-top: 15px;
+}
+
+.main__block_about-text a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+    letter-spacing: 2px;
+    font-size: 14px;
+}
+
+.main__block_about-text a:hover {
+    opacity: 0.75;
+}
+
+.main__block-price {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 500px;
+    margin: 0 auto;
+}
+
+.main__block-h2 {
+    padding-left: 50px;
+    font-size: 40px;
+    font-family: 'Helvetica';
+    font-weight: 400;
+}
+
+.main__block-price {
+    width: 1200px;
+    height: 600px;
+}
+
+.main__block_price-levelone,
+.main__block_price-leveltwo,
+.main__block_price-levelthree {
+    width: 350px;
+    height: 500px;
+    position: relative;
+    text-align: left;
+    padding-top: 170px;
+    padding-left: 70px;
+    box-sizing: border-box;
+    border: 1px solid white;
+    border-radius: 5px;
+    color: white;
+}
+
+.bg_color-first {
+    background-color: #C2CEA6;
+    z-index: 1;
+}
+
+.bg_color-second {
+    background-color: #ABBA82;
+    z-index: 1;
+}
+
+.bg_color-three {
+    background-color: #88A055;
+    z-index: 1;
+}
+
+.main__block_price-arcticle {
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 1px;
+    margin: 0;
+    padding-left: 0;
+}
+
+.main__block-price h3 {
+    font-family: 'Helvetica';
+    font-weight: 400;
+    font-size: 25px;
+    margin-top: 2px;
+}
+
+.main__block-price a {
+    box-sizing: border-box;
+    padding: 20px 60px 20px 60px;
+    border: 2px solid white;
+    border-radius: 30px;
+    text-decoration: none;
+    color: white;
+}
+
+.main__block-price a:hover {
+    opacity: 0.75;
+}
+
+.main__block-rewiews {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 1200px;
+    height: 600px;
+    margin: 0 auto;
+}
+
+/* мне немного стыдно за эту часть,
+но совсем чуть-чуть */
+
+.main__block-img {
+    background-image: 
+        url(../images/mini-circles.png);
+    background-repeat: no-repeat;
+    width: 100px;
+    height: 150px;
+    position: absolute;
+        right: 110px;
+        top: 2450px;
+    z-index: -1;
+}
+
+.main__block-price p:first-child, h3 {
+    text-transform: uppercase;
+}
+
+.main__block_price-cost {
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 100px;
+    padding-left: 0;
+}
+
+.main__block_price-levelone p, h3, a {
+    z-index: 3;
+}
+
+.main__block_price-levelone p:nth-child(2) {
+    position: absolute;
+        right: 40px;
+        top: -110px;
+    z-index: -1;
+    color: white;
+    font-size: 170px;
+    font-weight: 900;
+    opacity: 0.2;
+}
+
+.main__block_price-leveltwo p:nth-child(2) {
+    position: absolute;
+        right: 40px;
+        top: -110px;
+    z-index: -1;
+    color: white;
+    font-size: 170px;
+    font-weight: 900;
+    opacity: 0.2;
+}
+
+.main__block_price-levelthree p:nth-child(2) {
+    position: absolute;
+        right: 40px;
+        top: -110px;
+    z-index: -1;
+    color: white;
+    font-size: 170px;
+    font-weight: 900;
+    opacity: 0.2;
+}
+
+.main__block-rewiew {
+    width: 350px;
+    height: 500px;
+    box-sizing: border-box;
+    box-shadow: 0 0 10px 2px lightgray;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.main__block-rewiew img {
+    margin-top: 40px;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.main__block-h2 {
+    font-size: 40px;
+    padding-left: 50px;
+    padding-bottom: 50px;
+}
+
+.main__block-rewiew h4 {
+    font-size: 24px;
+    font-family: 'Helvetica';
+    font-weight: 300;
+    margin-bottom: 0;
+}
+
+.main__block-rewiew p:last-child {
+    padding-top: 15px;
+    font-size: 14px;
+}
+
+.main__block-rewiew img, h4, p {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.footer {
+    height: 100px;
+    width: 100%;
+    background-color: #88A055;
+    position: relative;
+}
+
+.footer__main {
+    width: 1150px;
+        margin: 0 auto;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer__main p {
+    color: white;
+    padding: 0;
+    margin: 0;
+    font-family: 'Helvetica';
+}
+
+.footer__social {
+    filter: brightness(0) invert(1);
+}
+
+.footer__social-VK {
+    width: 26px;
+    height: 18px;
+    padding-right: 10px;
+    color: white;
+}
+
+.footer__social-FB {
+    width: 16px;
+    height: 21px;
+    padding-right: 10px;
+}
+
+.footer__social-IG {
+    width: 20px;
+    height: 20px;
+} 
